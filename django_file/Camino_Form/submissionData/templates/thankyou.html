@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+  {% block title %}<title>Camino Loan Application Complete</title>{% endblock %}
+
+  {% block formTitle %}
+  <h2 style="margin-left: 12%; font-family: Avenir;"><strong>Thank you for applying!</strong></h2>
+  <h4 style="margin-left: 3%; font-family: Avenir;"><center>{{ status}}</center></h4>
+  {% endblock %}
+
+  {%block button%}
+  <button style="margin-top: 7.5%;"><a href="{% url 'index' %}">Visit Our Application </a></button>
+  {%endblock%}
+
+  <script>
+
+  </script>

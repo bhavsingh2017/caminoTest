@@ -1,0 +1,138 @@
+@CHARSET "UTF-8";
+
+a:hover, a:visited, a:link, a:active{
+color: white;
+text-decoration: none;
+}
+
+input{
+	border-radius: 3px;
+}
+
+
+body {
+	background: rgba(238,243,247,.5);
+	width: 100%;
+	height: auto;
+	background-size: cover;
+}
+section {
+   color: white;
+   font-size: 12px;
+   border-radius: 1em;
+   padding: 1em;
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%)
+}
+
+#container{
+	margin-top: 5%;
+}
+
+li{
+	background: rgb(238,243,247);
+}
+input[type="radio"] {
+	margin-left:10px;
+	color: "white";
+}
+
+h1{
+	color: black;
+	font-family: Avenir;
+}
+
+h2{
+	margin-left: 4.5%;
+	color: black;
+	font-family: Avenir;
+}
+
+
+#play_button {
+position:relative;
+transition: .5s ease;
+top: 12px;
+left: 60px;
+color: black;
+}
+
+#btn {
+  background: url("./Assignment2Images/magnifying_glass.png"); /* Blue background */
+  position: relative;
+  width: 16px;
+  height: 16px;
+  top: 5px;
+  left: -20px;
+}
+
+
+#mainLogo{
+	postion: absolute;
+	top: 50%;
+	left: 100%;
+}
+
+form {
+	background: white;
+	padding: 4px;
+	border-radius: 10px;
+	border: 3px solid rgb(238,243,247);
+	width: 450px;
+	height: 490px;
+	float: left;
+	margin-left: 33%;
+	margin-top: 5%;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+	width: 400px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 5px;
+	margin-left: 4.5%;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: orange;
+	color: white;
+	padding: 14px 20px;
+	margin: 4px 0;
+	border: none;
+	cursor: pointer;
+	width: 250px;
+	border-radius: 30px;
+	margin-left: 23%;
+	font-size: 20px;
+}
+
+label{
+	color: black;
+	margin-left: 4.5%;
+	font-size: 20px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+	opacity: .8;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+
+/* Add padding to containers */
+.container {
+	margin-top: 30%;
+	padding: 5px;
+}
