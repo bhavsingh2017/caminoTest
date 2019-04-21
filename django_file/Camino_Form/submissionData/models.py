@@ -8,7 +8,7 @@ class Loan(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     amount = models.IntegerField(help_text='Please Enter Loan Amount Required')
     years = models.FloatField(null=True, help_text='Please Enter Years in Business')
-    business = forms.CharField(label='Type of Business?', widget=forms.Select(choices=Businesses), initial="Select your business")
+    business = models.CharField(max_length=20, help_text='Type of Business')
 
     LOAN_STATUS = (
     	'loan application denied',
