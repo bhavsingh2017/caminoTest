@@ -25,8 +25,8 @@ SECRET_KEY = 't2n+#s55qm#8)d4&dq&y_p6cg*$6_3d$&+s)gptnp(b#cxyh(h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#ALLOWED_HOSTS = [‘0.0.0.0’, ‘localhost’, ‘camino-test-bhav.herokuapp.com’]
-ALLOWED_HOSTS=[]
+ALLOWED_HOSTS = ["camino-test-bhav.herokuapp.com"]
+#ALLOWED_HOSTS=[]
 
 # Application definition
 
@@ -117,5 +117,18 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-#STATIC_ROOT = os.path.join(BASE_DIR, ‘staticfiles’)
+#STATIC_ROOT = os.path.join(BASE_DIR, ‘static/’)
+#print("STATIC ROOT IS "+BASE_DIR)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+SETTINGS_DIR = os.path.dirname(__file__)
+PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
+PROJECT_PATH = os.path.abspath(PROJECT_PATH)
+
+STATIC_PATH = os.path.join(PROJECT_PATH, 'static')
+STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    )

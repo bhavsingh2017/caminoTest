@@ -1,9 +1,11 @@
 FROM python:3.7
 MAINTAINER BHAVSINGH
 
-COPY ./camino_form /camino_form
-WORKDIR /camino_form
+USER root
+ADD Camino_Form camino_form
+WORKDIR camino_form
 
+RUN ls -a
 RUN pip install -r requirements.txt
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:${PORT}"]
+CMD ["gunicorn", "Camino_Form.wsgi:application", "--log-file -", "0.0.0.0:$PORT"]
